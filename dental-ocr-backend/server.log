@@ -1,0 +1,10 @@
+Database initialized at ./data/dental_ocr.sqlite
+Dental OCR API running on http://localhost:5000
+Environment: development
+[0mPOST /api/pdf/patient/1 [33m404[0m 445.950 ms - 1198[0m
+[0mGET /api/patients?page=1&limit=3 [32m200[0m 13.522 ms - 5394[0m
+[0mGET /api/patients?page=1&limit=2 [32m200[0m 3.371 ms - 5394[0m
+[0mPOST /api/pdf/patient/PT-001 [32m200[0m 406.146 ms - 154[0m
+[0mGET /api/documents?page=1&limit=2 [32m200[0m 5.120 ms - 13417[0m
+[0mGET /api/documents/DOC-052/download [33m404[0m 1.381 ms - 63[0m
+[0mGET /api/documents/DOC-001 [32m200[0m 0.954 ms - 250[0m

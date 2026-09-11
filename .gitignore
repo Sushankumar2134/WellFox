@@ -1,0 +1,4 @@
+dental-ocr-backend/node_modules/
+.expo/
+.env
+backend/.env

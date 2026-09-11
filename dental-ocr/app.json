@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "dental-ocr",
+    "slug": "dental-ocr",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.dentalocr.app",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-asset",
+      "expo-font",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Dental OCR needs camera access to capture dental records."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Dental OCR needs access to your photos to select dental records.",
+          "cameraPermission": "Dental OCR needs camera access to capture dental records."
+        }
+      ],
+      [
+        "expo-document-picker",
+        {
+          "android": {
+            "action": "android.intent.action.GET_CONTENT",
+            "mimeType": "image/*,application/pdf"
+          }
+        }
+      ]
+    ]
+  }
+}
